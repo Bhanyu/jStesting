@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#button-slide{
+    padding: 30px 12px;
+}
+.container{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ 
+}
+.testimonial{
+    position: relative;
+    max-width: 1000px;
+    width: 100%;
+    padding: 50px 0;
+    row-gap: 30px;
+  
+   
+    height:500px;
+}
+.testimonial .image{
+    height: 170px;
+    width: 170px;
+    object-fit: cover;
+    border-radius: 50%;
+ 
+}
+.testimonial .slide{
+    position: absolute;
+    background-color: chocolate;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 20px;
+    overflow: hidden;
+    opacity: 0;
+    row-gap: 30px;
+    inset: 0;
+  
+}
+.slide.active {
+  opacity: 1;
+  }
+.slide p {
+    padding: 0 160px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    max-width: 90%;
+}
+.quoicon{
+    font-size: 30px;
+    color: rgb(60, 126, 247); 
+}
+.details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.name{
+    font-size: 14px;
+    font-weight: 400;
+    color: #333 ;
+}
+.btn{
+    position: absolute;
+    z-index: 1;
+    top: 45%;
+    padding: 30px;
+    border-radius: 50%;
+    border: none;
+    background-color: gainsboro;
+}
+.prev{
+  
+   left: 10px;
+
+}
+.next{
+
+right: 10px;
+}
